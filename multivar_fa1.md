@@ -3,33 +3,34 @@ MULTIVAR FA1
 Karl Isaiah Buenafe
 2025-08-27
 
-## R Markdown
+# Dataset
 
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+## Student Performance
 
 ``` r
-summary(cars)
+df1= read.csv("~/Documents/MULTIVAR/STUDENT.csv")
+head.matrix(df1, 4)
 ```
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+    ##   Student Math English Science
+    ## 1      S1   85      78      92
+    ## 2      S2   88      82      85
+    ## 3      S3   76      74      80
+    ## 4      S4   90      88      94
 
-## Including Plots
+first 4 rows of the Student Performance dataset
 
-You can also embed plots, for example:
+## Plant Measturements
 
-![](multivar_fa1_files/figure-gfm/pressure-1.png)<!-- -->
+``` r
+df2= read.csv("~/Documents/MULTIVAR/PLANT.csv")
+head.matrix(df2, 4)
+```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+    ##   Plant Height LeafLength LeafWidth
+    ## 1    P1     25         10         4
+    ## 2    P2     28         12         5
+    ## 3    P3     22          9         3
+    ## 4    P4     30         14         6
+
+first 4 rows of the Plant Measturements dataset
